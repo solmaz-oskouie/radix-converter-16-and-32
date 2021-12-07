@@ -4,15 +4,21 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import com.github.javafaker.Faker;
+import org.apache.commons.lang3.math.NumberUtils;
 import org.junit.Before;
 import org.junit.Test;
 
+import javax.print.attribute.standard.NumberUp;
 import java.math.BigInteger;
 import java.util.stream.IntStream;
 
 /**
  * Unit test for converting numbers between 10 <-> 32/16 radixes.
- * In this class we use Long and BigInteger 's methods for converting between radixes, but seems like Long methods is faster and user
+ * In this class we use Long and BigInteger 's methods for converting between radixes,
+ * but it seems like the  Long's methods are  developer-friendly and straightforward
+ *
+ * I guess there are some good third-party libraries which can be useful like libs  that have been list in  following link
+ * https://www.google.com/search?q=best+math+library+for+java&client=ubuntu&hs=EoI&channel=fs&ei=s1SvYbCtNYH-kwXLrZ6ADg&oq=best+math+library+in+java&gs_lcp=Cgdnd3Mtd2l6EAEYATIGCAAQFhAeMgYIABAWEB46BwgAEEcQsAM6BQgAEJECOgsIABCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6EQguEIAEELEDEIMBEMcBEKMCOg4ILhCABBCxAxDHARDRAzoOCC4QgAQQsQMQxwEQowI6BAgAEEM6CAgAEIAEELEDOgsIABCABBCxAxDJAzoFCAAQkgM6BQgAEIAEOgsIABDsAxDEAhCLAzoJCAAQFhAeEIsDOggIABAWEAoQHjoICCEQFhAdEB5KBAhBGABQqAlYv1hgqmpoAXACeACAAc4DiAHAN5IBCjAuNC4xNC40LjOYAQCgAQHIAQi4AQLAAQE&sclient=gws-wiz
  */
 public class AppTest {
 
